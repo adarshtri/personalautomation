@@ -53,18 +53,18 @@ class ConfigurationManager(object):
         return self._configuration
 
 
-class ConfigurationManagerSingleton(object):
-
-    config = None
-
-    @staticmethod
-    def get_config(configuration_file):
-
-        if not ConfigurationManagerSingleton.config:
-            configuration_file_reader = ConfigurationManager(configuration_file=configuration_file)
-            ConfigurationManagerSingleton.config = configuration_file_reader.get_configuration()
-
-        return ConfigurationManagerSingleton.config
+# class ConfigurationManagerSingleton(object):
+#
+#     config = None
+#
+#     @staticmethod
+#     def get_config(configuration_file):
+#
+#         if not ConfigurationManagerSingleton.config:
+#             configuration_file_reader = ConfigurationManager(configuration_file=configuration_file)
+#             ConfigurationManagerSingleton.config = configuration_file_reader.get_configuration()
+#
+#         return ConfigurationManagerSingleton.config
 
 
 class ConfigurationFileParser(object):
