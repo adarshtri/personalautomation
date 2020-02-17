@@ -1,7 +1,7 @@
 {
 	"keepitclean":{
 		"pdf":	[
-					{"src" : "/tmp", "dest": "/tmp/pdfs"}
+					{"src" : "/tmp", "dest": "/tmp/pds"}
 				]
 	}
 }

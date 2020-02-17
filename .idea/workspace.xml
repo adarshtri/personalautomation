@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2354d85a-f20b-4c4a-923f-aa1827753689" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/foldermanager/utility/filesystem_check_utilities.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foldermanager/config/managers/configmanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/foldermanager/config/managers/configmanager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foldermanager/context/contextmanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/foldermanager/context/contextmanager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foldermanager/exceptions/foldermanagerexceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/foldermanager/exceptions/foldermanagerexceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foldermanager/testscript.py" beforeDir="false" afterPath="$PROJECT_DIR$/foldermanager/testscript.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foldermanager/tools/keepitclean.py" beforeDir="false" afterPath="$PROJECT_DIR$/foldermanager/tools/keepitclean.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sampleconf.json" beforeDir="false" afterPath="$PROJECT_DIR$/sampleconf.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Setup Script" />
         <option value="Python Script" />
+        <option value="Setup Script" />
       </list>
     </option>
   </component>
@@ -41,8 +38,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/foldermanager" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -57,7 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.testscript">
+  <component name="RunManager" selected="Python.personalautomation">
     <configuration name="configmanager" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PersonalAutomation" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,6 +99,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="personalautomation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PersonalAutomation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PersonalAutomationConfiguration" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/PersonalAutomationConfiguration/personalautomation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="testscript" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PersonalAutomation" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,6 +145,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.personalautomation" />
         <item itemvalue="Python.testscript" />
         <item itemvalue="Python.configmanager" />
         <item itemvalue="Python.keepitclean" />
@@ -143,7 +163,7 @@
       <option name="presentableId" value="Default" />
       <updated>1581890203942</updated>
       <workItem from="1581890206576" duration="5151000" />
-      <workItem from="1581921611249" duration="2822000" />
+      <workItem from="1581921611249" duration="4592000" />
     </task>
     <servers />
   </component>
@@ -164,8 +184,9 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PersonalAutomation$testscript.coverage" NAME="testscript Coverage Results" MODIFIED="1581924421559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foldermanager" />
+    <SUITE FILE_PATH="coverage/PersonalAutomation$testscript.coverage" NAME="testscript Coverage Results" MODIFIED="1581925207450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foldermanager" />
     <SUITE FILE_PATH="coverage/PersonalAutomation$configmanager.coverage" NAME="configmanager Coverage Results" MODIFIED="1581923553172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foldermanager/config/managers" />
+    <SUITE FILE_PATH="coverage/PersonalAutomation$personalautomation.coverage" NAME="personalautomation Coverage Results" MODIFIED="1581925530332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/PersonalAutomationConfiguration" />
     <SUITE FILE_PATH="coverage/PersonalAutomation$keepitclean.coverage" NAME="keepitclean Coverage Results" MODIFIED="1581922453289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foldermanager/tools" />
   </component>
 </project>

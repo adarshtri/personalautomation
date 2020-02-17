@@ -1,12 +1,13 @@
 from setuptools import setup
 
 setup(
-    name='foldermanager',
-    version='',
-    packages=['foldermanager'],
-    url='',
+    name='automatelinux',
+    version='0.1',
+    packages=['foldermanager', 'foldermanager.tools', 'foldermanager.config', 'foldermanager.config.managers',
+              'foldermanager.context', 'foldermanager.utility', 'foldermanager.exceptions'],
+    url='https://github.com/adarshtri/personalautomation',
     license='',
     author='atrivedi',
-    author_email='atrived@ncsu.edu',
-    description='Manage Folders by moving different files format automatically to respective folders'
+    author_email='adarsh.trivedi100@gmail.com',
+    description=''
 )

@@ -1,0 +1,1 @@
+/usr/local/lib/python3.7/site-packages/automatelinux-0.1-py3.7.egg
