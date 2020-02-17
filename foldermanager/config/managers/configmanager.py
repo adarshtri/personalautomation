@@ -1,5 +1,6 @@
 import ast
 from foldermanager.exceptions import foldermanagerexceptions
+from abc import ABC, abstractmethod
 
 
 class ConfigurationManager(object):
@@ -41,36 +42,39 @@ class ConfigurationManager(object):
         self._configuration = configuration_dictionary
 
     def _parse_configuration_for_correctness(self):
-        parser = ConfigurationFileParser(configuration=self._configuration)
 
-        try:
-            parser.parse()
-        except foldermanagerexceptions.ConfigurationFileParseException as cfpe:
-            self._configuration = None
-            raise foldermanagerexceptions.ConfigurationFileParseException(message=cfpe.message, errors=cfpe.message)
+        for utility_type in self._configuration:
+            if utility_type not in ConfigurationConstants.VALID_FOLDER_MANAGER_UTILITIES:
+                raise foldermanagerexceptions.InvalidUtilityConfigurationType(
+                    "Utility type \"{}\" is not supported.".format(utility_type),
+                    None)
+            else:
+                parser = ConfigurationConstants.VALID_FOLDER_MANAGER_UTILITIES[utility_type](
+                    self._configuration[utility_type])
+                try:
+                    parser.parse()
+                except foldermanagerexceptions.ConfigurationFileParseException as cfpe:
+                    self._configuration = None
+                    raise foldermanagerexceptions.ConfigurationFileParseException(message=cfpe.message, errors=cfpe.message)
 
     def get_configuration(self):
         return self._configuration
 
 
-# class ConfigurationManagerSingleton(object):
-#
-#     config = None
-#
-#     @staticmethod
-#     def get_config(configuration_file):
-#
-#         if not ConfigurationManagerSingleton.config:
-#             configuration_file_reader = ConfigurationManager(configuration_file=configuration_file)
-#             ConfigurationManagerSingleton.config = configuration_file_reader.get_configuration()
-#
-#         return ConfigurationManagerSingleton.config
-
-
-class ConfigurationFileParser(object):
+class ConfigurationFileParser(ABC):
 
     def __init__(self, configuration):
         self._configuration = configuration
+
+    @abstractmethod
+    def parse(self) -> bool:
+        pass
+
+
+class KeepItCleanConfigurationFileParser(ConfigurationFileParser):
+
+    def __init__(self, configuration):
+        super().__init__(configuration=configuration)
 
     def parse(self) -> bool:
 
@@ -94,3 +98,13 @@ class ConfigurationFileParser(object):
                         errors=None
                     )
         return True
+
+
+class ConfigurationConstants:
+
+    # to implement strategy pattern
+    VALID_FOLDER_MANAGER_UTILITIES = {
+        "keepitclean": KeepItCleanConfigurationFileParser
+    }
+
+    KEEPITCLEAN_CONFIGURATION = "keepitclean"

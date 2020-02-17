@@ -18,3 +18,11 @@ class ConfigurationFileNotFoundException(FolderManagerExceptions):
 
 class ConfigurationFileParseException(FolderManagerExceptions):
     pass
+
+
+class DirectoryNotExistsException(FolderManagerExceptions):
+    pass
+
+
+class InvalidUtilityConfigurationType(FolderManagerExceptions):
+    pass
